@@ -33,3 +33,19 @@ display {color:hsl(0, 100%, 35%);}
 
 display.one {display: inline;}
 display.two {display: block;}
+
+div.static {
+    position: static;
+    margin: 10px 10px 10px 10px;
+}
+div.relative {
+    position: relative;
+    border: 5px dashed brown;
+}
+
+a:active {
+    color: white; 
+}
+a:hover {
+    background-color: red;
+}
