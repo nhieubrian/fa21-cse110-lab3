@@ -9,8 +9,16 @@
     <body>
         <header>
             <style>
+
+                @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
                 body {
                     background-color: rgb(190, 190, 190);
+                    font-family: 'Open Sans Condensed', sans-serif;
+                }
+                @media only screen and (max-width: 600px) {
+                    body{
+                        background-color: black; 
+                    }
                 }
             </style>
             <h1 style="text-align: center;">My First Meetings Notes</h1>
@@ -24,14 +32,19 @@
             <h2 style="color:crimson">Thanks for showing up!</h2>
             <div class="box">
                 <ul>
-                    <li>Brian Nhieu</li>
-                    <li>Crian Nhieu</li>
-                    <li>Drian Nhieu</li>
-                    <li>Erian Nhieu</li>
+                    <li>
+                        <div>Attendance List:</div>
+                        <ul>
+                            <li>Brian Nhieu</li>
+                            <li>Crian Nhieu</li>
+                            <li>Drian Nhieu</li>
+                            <li>Erian Nhieu</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <h2>Today we will be covering:</h2>
-            <div class="box2">
+            <div id="coolbeans">
                 <ol>
                     <li>Working Goals</li>
                     <li>Current State</li>
@@ -41,46 +54,64 @@
         </header>
 
         <main>
-            <div class="static">
-                <h1 id="#">Working Goals:</h1>
-                <p>
-                    As a group, our goal is to take this empty blank project and bring to <b>life</b> the beauty of a 
-                    <span style="color:green">golf simulator</span>. 
-                </p>
-                <img src="20749072-happy-golf-ball-cartoon-character-swinging-a-golf-club.jpg" alt="img of golf cartoon" width="500" height="500">
-                <p>
-                    As <i>scary</i> that this may seem, if we <strong>work together</strong>, anything can be <display class:"one">completed!</display>
-                </p>
-            </div>
-            <div class="relative">
-                <h1>Current State:</h1>
-                <p>
-                    Thanks to engineers Brian Nhieu and Crian Nhieu, we were able to create this website where we can all
-                    view these meeting notes, <em>whenever, wherever</em>!
-                    <hr> 
-                    On the other hand, Drian Nhieu and Erian Nhieu were able to find these amazing resources that 
-                    will be helpful in continuing this project.
-                <details>
-                    <summary>Videos:</summary>
-                    <a href="https://www.youtube.com/watch?v=z06QR-tz1_o">Is the video quality poor? Visit this link!</a>
-                    <br>
-                    <video width="400" height = "400" controls>
-                        <source src="youtube.mp4" type="video/mp4">
-                    </video>
-                </details>
-            </div>
-            <div>
-                <h1>Future Goals:</h1>
-                <section>
+            <div class="grid">
+                <div class="static">
+                    <h1 id="#">Working Goals:</h1>
                     <p>
-                        Thank you for everyone that showed up! Here's the short motivation speech that we listened to:
-                        <br>
-                        <audio controls>
-                            <source src="Teamwork-DavidGoggins-BestMotivationalSpeech2021.mp3" type="audio/mp3">
-                        </audio>
+                        <div>
+                        As a group, our <span>goal</span> is to take this empty blank project and bring to <b>life</b> the beauty of a 
+                        <span><span style="color:green">golf simulator</span></span>. 
+                        </div>
                     </p>
-                </section>
+                    <img src="20749072-happy-golf-ball-cartoon-character-swinging-a-golf-club.jpg" alt="img of golf cartoon" width="500" height="500">
+                    <p>
+                        As <i>scary</i> that this may seem, if we <strong>work together</strong>, anything can be <display class:"one">completed!</display>
+                    </p>
+                </div>
+                <div class="relative">
+                    <h1>Current State:</h1>
+                    <p>
+                        Thanks to engineers Brian Nhieu and Crian Nhieu, we were able to create this website where we can all
+                        view these meeting notes, <em>whenever, wherever</em>!
+                        <hr> 
+                        On the other hand, Drian Nhieu and Erian Nhieu were able to find these amazing resources that 
+                        will be helpful in continuing this project.
+                    <details>
+                        <summary>Videos:</summary>
+                        <a href="https://www.youtube.com/watch?v=z06QR-tz1_o">Is the video quality poor? Visit this link!</a>
+                        <p>I hope you found the video entertaining!</p>
+                        <br>
+                        <video width="400" height = "400" controls>
+                            <source src="youtube.mp4" type="video/mp4">
+                        </video>
+                    </details>
+                </div>
+                <div>
+                    <h1 style="text-align: center;">Future Goals:</h1>
+                    <section style="text-align: center;">
+                        <p>
+                            Thank you for everyone that showed up! Here's the short motivation speech that we listened to:
+                            <br>
+                            <br>
+                            <br>
+                            <audio controls>
+                                <source src="Teamwork-DavidGoggins-BestMotivationalSpeech2021.mp3" type="audio/mp3">
+                            </audio>
+                        </p>
+                    </section>
+                </div>
             </div>
+            <h3>Proposed Build Pipeline:</h3>
+            <div class="flex">
+                <div class="item">Profits!!!</div>
+                <div class="item">Testing</div>
+                <div class="item">Production</div>
+                <div class="item">Brainstorming</div>
+            </div>
+            <p>
+                Thank you for taking the time to read this
+            </p>
+            <span>week's meeting notes! Remember to come back next week.</span>
         </main>
         <footer>
             <h1>A complation of the types of forms in the footer</h1>
